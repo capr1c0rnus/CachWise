@@ -29,6 +29,10 @@ plugins {
                          "ktlint_function_naming_ignore_when_annotated_with" to "Composable, Test",
                      )
                  )
+             suppressLintsFor {
+                 step = "ktlint"
+                 shortCode = "standard:no-wildcard-imports"
+             }
          }
 
          kotlinGradle {
